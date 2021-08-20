@@ -1,0 +1,7 @@
+{
+  "name": "mobiluyg",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

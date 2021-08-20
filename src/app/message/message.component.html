@@ -1,0 +1,13 @@
+<ion-item *ngIf="message" [routerLink]="'/message/' + message.id" [detail]="false">
+  <div slot="start" [class]="!message.read ? 'dot dot-unread' : 'dot'"></div>
+  <ion-label class="ion-text-wrap">
+    <h2 style="color:rgb(121, 109, 230)">
+      <ion-icon name="person-circle" color="primary" style="font-size: 50px"></ion-icon> 
+      <!--<ion-button (click)="runHttp()">run htpp</ion-button>-->
+      {{ message.fromName }} , Yaş
+      <span class="date">
+        <ion-icon name="chevron-forward-outline" style=" color: hsl(240, 1%, 79%); float:right;"></ion-icon>
+      </span>
+    </h2>
+  </ion-label>
+  </ion-item>
